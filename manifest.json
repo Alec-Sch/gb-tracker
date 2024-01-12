@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "GB Tracker",
+    "description": "Gold brick drop tracker",
+    "version": "1.0",
+    "action": {
+      "default_popup": "main_view.html",
+      "default_icon": "images/Gold_Brick_square.jpg"
+    },
+    "background":{
+      "service_worker": "scripts/background.js"
+    },
+    "permissions": [
+      "webRequest"
+    ],
+    "host_permissions": [
+      "*://*.granbluefantasy.jp/*",
+      "*://gbf.game.mbga.jp/*"
+    ]
+  }
